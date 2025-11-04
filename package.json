@@ -1,0 +1,28 @@
+{
+  "name": "holodeck-toolkit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A GUI toolset of native web components for increasing information density of the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node esbuild.config.js",
+    "build": "node esbuild.config.js --build"
+  },
+  "keywords": [
+    "GUI",
+    "toolkit",
+    "webcomponents",
+    "components"
+  ],
+  "author": "Simon Martens",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.16",
+    "chokidar": "^4.0.3",
+    "esbuild": "^0.25.12",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.16",
+    "ws": "^8.18.0"
+  }
+}
