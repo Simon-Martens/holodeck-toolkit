@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>esbuild + Tailwind CSS v4</title>
+	<title>Holodeck UI Toolkit</title>
 	<link rel="stylesheet" href="/dist/styles.css">
 	<script type="module" src="/dist/main.js"></script>
 	<script>
@@ -17,14 +17,22 @@
 	</script>
 </head>
 
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-	<div class="bg-white p-8 rounded-lg shadow-lg">
-		<h1 class="text-3xl font-bold text-blue-600 mb-4">Hello Tailwind CSS v4!</h1>
-		<p class="text-gray-700">This is a simple esbuild + PostCSS + Tailwind setup with hot reload.</p>
-		<button id="demo-btn" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
-			Click me! Was?
-		</button>
+<body class="bg-slate-100 text-gray-900 tracking-tight leading-none mx-4 my-4" style="">
+	<hyperdeck-bg-grid></hyperdeck-bg-grid>
+
+	<div class="p-4 mb-8 border-2 border-blue-500 w-auto" data-grid-snap>
+		<h2 class="font-bold mb-4">Fixed Size Box</h2>
+		<p class="mb-4">Using w-64 p-4 mb-8 ml-2</p>
+		<p class="mb-4">Manual Tailwind sizing</p>
+		<p>Multiples of 2 for width, 4 for height</p>
 	</div>
+
+	<div data-grid-snap class="p-4 mb-8 border-2 border-purple-500 inline-block">
+		<h2 class="font-bold mb-4">Auto-Snapped Box</h2>
+		<p class="mb-4">Uses data-grid-snap attribute</p>
+		<p>JS rounds dimensions up to grid!</p>
+	</div>
+
 </body>
 
 </html>

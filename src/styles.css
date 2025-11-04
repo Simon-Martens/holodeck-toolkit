@@ -7,6 +7,22 @@
   --color-secondary: #8b5cf6;
   --font-sans: "Hack Nerd Font", "Hack Nerd Font Mono", monospace;
   --font-mono: "Hack Nerd Font", "Hack Nerd Font Mono", monospace;
+
+  /* Grid-aligned spacing:
+     - Width: 2 = 0.5rem = 1 grid cell width
+     - Height: 4 = 1rem = 1 grid cell height
+  */
+  --spacing-2: var(--grid-cell-width);   /* 0.5rem - 1 cell wide */
+  --spacing-4: var(--grid-cell-height);  /* 1rem - 1 cell tall */
+  --spacing-8: calc(var(--grid-cell-height) * 2);
+  --spacing-12: calc(var(--grid-cell-height) * 3);
+  --spacing-16: calc(var(--grid-cell-height) * 4);
+  --spacing-20: calc(var(--grid-cell-height) * 5);
+  --spacing-24: calc(var(--grid-cell-height) * 6);
+  --spacing-32: calc(var(--grid-cell-height) * 8);
+  --spacing-40: calc(var(--grid-cell-height) * 10);
+  --spacing-48: calc(var(--grid-cell-height) * 12);
+  --spacing-64: calc(var(--grid-cell-height) * 16);
 }
 
 /* You can use Tailwind utilities in your custom CSS */
